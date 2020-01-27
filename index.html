@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Default things-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!--Title-->
+    <title>NYSL – Home</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+
+    <!--JS for marquee-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/jquery.marquee.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar flex">
+            <div class="nav-section-container nav-section-container-logo div-2-6">
+                <a class="nysl-nav" href="./index.html">NYSL</a>
+            </div>
+            <div class="nav-section-container flex sections div-4-6">
+                <a class="nav-section nav-active" href="./index.html">Home</a>
+                <a class="nav-section" href="./about.html">About</a>
+                <a class="nav-section" href="./game-info.html">Game info</a>
+                <a class="nav-section" href="./rules.html">Rules</a>
+                <a class="nav-section" href="./registration-form.html">Registration</a>
+                <a class="nav-section" href="./contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <!--Banner foto-->
+        <div class="main-banner">
+            <div class="nysl-shortname flex div6-6 div-centred">
+                <!--<p class="big-nysl line-height-tweak centred">NYSL</p>-->
+                <div class="dot-banner"></div>
+            </div>
+            <div class="nysl-longname">
+                <h1 class="bebas-s white line-height-tweak centred">Northside Youth Soccer League</h1>
+            </div>
+        </div>
+
+        <!--Marquee-->
+        <div class="text-banner">
+            <div class="marquee bebas-m">
+                Upcoming events
+                <img class="down-arrow arrow-margin-left" src="./img/down-arrow.svg">
+                <img class="down-arrow" src="./img/down-arrow.svg">
+                <img class="down-arrow arrow-margin-right" src="./img/down-arrow.svg">
+                August 4 
+                <span class="marquee-dot"></span>
+                NYSL Fundraiser
+                <img class="down-arrow arrow-margin-left" src="./img/down-arrow.svg">
+                <img class="down-arrow" src="./img/down-arrow.svg">
+                <img class="down-arrow arrow-margin-right" src="./img/down-arrow.svg">
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!--Spacer-->
+        <div class="spacer-m"></div>
+
+        <!--Upcoming Events-->
+        <div class="events">
+
+            <div class="flex border-top border-bottom div-centred">
+                <div class="div-3-6 div-centred flex div-padding centred border-right border-left">
+                    <h1 class="bebas-l">Upcoming<br>Events</h1>
+                </div>
+            </div>
+
+            <div class="spacer-s"></div>
+
+            <div class="flex div-wrap div-centred border-top border-bottom">
+
+                <div class="div-2-6 centred div-centred div-padding border-right">
+                    <h3 class="bebas-s">August 4</h3>
+                    <span class="dot"></span>
+                    <p class="public-sans-m">NYSL Fundraiser</p>
+                </div>
+
+                <div class="div-2-6 centred div-centred div-padding">
+                    <h3 class="bebas-s">August 16</h3>
+                    <span class="dot"></span>
+                    <p class="public-sans-m">Season Kickoff: Meet the Teams</p>
+                </div>
+
+                <div class="div-2-6 centred div-centred div-padding border-right border-left">
+                    <h3 class="bebas-s">September 1</h3>
+                    <span class="dot"></span>
+                    <p class="public-sans-m">First Game of the Season (Check Game Schedule for details)</p>
+                </div>
+
+            </div>
+
+            <div class="spacer-m"></div>
+            
+        </div>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="nysl-footer">
+        <p class="bebas-s white centred footer-padding">© All rights reserved NYSL 2020</p>
+    </footer>
+
+    <!--Calling Marquee JS-->
+    <script>
+        $(function(){
+            $('.marquee').marquee({
+                duplicated: true,
+                startVisible: true,
+                delayBeforeStart: 0,
+                duration: 8000,
+            });
+        });
+    </script>    
+    
+    <!--Navbar color scroll-->
+    <script>
+    $(function () {
+        $(document).scroll(function () {
+        var $nav = $(".navbar");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        var $nav = $(".nav-section");
+        $nav.toggleClass('white', $(this).scrollTop() > $nav.height());
+        var $nav = $(".nav-active");
+        $nav.toggleClass('nav-active-white', $(this).scrollTop() > $nav.height());
+        var $nav = $(".nysl-nav");
+        $nav.toggleClass('white', $(this).scrollTop() > $nav.height());
+        });
+    });
+    </script>
+    
+</body>
+
+</html>

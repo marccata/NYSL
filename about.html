@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Default things-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!--Title-->
+    <title>NYSL – About</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar flex">
+            <div class="nav-section-container nav-section-container-logo div-2-6">
+                <a class="nysl-nav" href="./index.html">NYSL</a>
+            </div>
+            <div class="nav-section-container flex sections div-4-6">
+                <a class="nav-section" href="./index.html">Home</a>
+                <a class="nav-section nav-active" href="./about.html">About</a>
+                <a class="nav-section" href="./game-info.html">Game info</a>
+                <a class="nav-section" href="./rules.html">Rules</a>
+                <a class="nav-section" href="./registration-form.html">Registration</a>
+                <a class="nav-section" href="./contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <!--Banner foto-->
+        <div class="main-banner main-banner-about"></div>
+
+        <!--Spacer-->
+        <div class="spacer-m"></div>
+
+        <!--About-->
+        <div class="border-bottom flex border-top div-centred">
+            <div class="div-3-6 div-padding border-right border-left centred">
+                <h1 class="bebas-l">About</h1>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!--Spacer-->
+        <div class="spacer-s"></div>
+
+        <!--Box wit texts and titles-->
+        <div class="flex border-top div-wrap div-centred border-bottom">
+            <div class="div-3-6 div-padding border-right border-bottom centred">
+                <h3 class="bebas-s">Upcoming Events</h3>
+                <span class="dot"></span>
+                <p class="public-sans-m">To support young athletes living in Chicago's northside neighborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, especially those skills related to team cooperation and good sportsmanship.</p>
+            </div>
+            <div class="div-3-6 div-padding border-bottom centred">
+                <h3 class="bebas-s">Vision</h3>
+                <span class="dot"></span>
+                <p class="public-sans-m">The Northside Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
+            </div>
+            <div class="div-3-6 border-right border-left div-padding centred">
+                <h3 class="bebas-s">General Info</h3>
+                <span class="dot"></span>
+                <p class="public-sans-m">The Northside Youth Soccer League was established in 1996 to provide athletes residing in Chicago's northside neighborhood an environment to learn and play soccer. To be a member of NYSL, you must be between the ages of 4-12 and reside in a Chicago northside neighborhood. NYSL is run by a small, full-time staff, and relies on the generous volunteer time of parents and former league members.</p>        
+            </div>
+        </div>
+
+        <!--Spacer-->
+        <div class="spacer-m"></div>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="nysl-footer">
+        <p class="bebas-s white centred footer-padding">© All rights reserved NYSL 2020</p>
+    </footer>  
+    
+    <!--Navbar color scroll-->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+            var $nav = $(".navbar");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            var $nav = $(".nav-section");
+            $nav.toggleClass('white', $(this).scrollTop() > $nav.height());
+            var $nav = $(".nav-active");
+            $nav.toggleClass('nav-active-white', $(this).scrollTop() > $nav.height());
+            var $nav = $(".nysl-nav");
+            $nav.toggleClass('white', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

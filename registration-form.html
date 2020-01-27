@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Default things-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <!--Title-->
+    <title>NYSL – Registration Form</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet"/>
+
+  </head>
+
+  <body>
+
+    <header>
+    
+      <!--Navbar-->
+      <nav class="navbar flex">
+        <div class="nav-section-container nav-section-container-logo div-2-6">
+            <a class="nysl-nav" href="./index.html">NYSL</a>
+        </div>
+        <div class="nav-section-container flex sections div-4-6">
+            <a class="nav-section" href="./index.html">Home</a>
+            <a class="nav-section" href="./about.html">About</a>
+            <a class="nav-section" href="./game-info.html">Game info</a>
+            <a class="nav-section" href="./rules.html">Rules</a>
+            <a class="nav-section  nav-active" href="./registration-form.html">Registration</a>
+            <a class="nav-section" href="./contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <!--Banner foto-->
+      <div class="main-banner main-banner-about"></div>
+
+      <!--Spacer-->
+      <div class="spacer-m"></div>
+
+      <!--Rules-->
+      <div class="flex border-top div-centred border-bottom">
+        <div class="div-3-6 centred div-padding border-right border-left">
+          <h1 class="bebas-l">Registration Form</h1>
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+
+      <!--Spacer-->
+      <div class="spacer-m"></div>
+
+      <!--Form-->
+      <div class="flex border-top border-bottom div-centred">
+        <div class="div-4-6 flex border-right border-left">
+          <form action="./registration-form-data.html" method="get" class="public-sans-m flex div-wrap div-direction form">
+
+            <label class="div-2-6 form-title">Name
+              <input type="text" name="Name" required/>
+            </label>
+
+            <label class="div-2-6 form-title border-left">Surname
+              <input type="text" name="Surname"/>
+            </label>
+
+            <div class="form-line border-top"></div>
+
+            <label class="div-4-6 form-title">Street address
+              <input type="text" name="Street"/>
+            </label>
+            
+            <div class="form-line border-top"></div>
+
+            <label class="div-2-6 form-title">City
+              <input type="text" name="City"/>
+            </label>
+
+            <label class="div-2-6 form-title border-left">Zip code
+              <input type="text" name="Zip-code"/>
+            </label>
+            
+            <div class="form-line border-top"></div>
+
+            <label class="div-2-6 form-title">Birth Date
+              <input type="text" name="Birth"/>
+            </label>
+
+            <div class="div-2-6 radio border-left flex">
+              <span class="form-title">Gender</span>
+              <label>
+                <input type="radio" name="Gender" value="male" checked/>Male
+              </label>
+              <label>
+                <input type="radio" name="Gender" value="female"/>Female
+              </label>
+            </div>
+
+            <div class="form-line border-top"></div>
+
+            <div class="div-2-6 radio flex">
+              <span class="form-title">Grade</span>
+              <label>
+                <input type="radio" name="Grade" value="pre-school"/>Pre-School
+              </label>
+              <label>
+                <input type="radio" name="Grade" value="1st-grade"/>1st
+              </label>
+              <label>
+                <input type="radio" name="Grade" value="1st-grade"/>2nd
+              </label>
+              <label>
+                <input type="radio" name="Grade" value="1st-grade"/>3rd
+              </label>
+              <label>
+                <input type="radio" name="Grade" value="1st-grade"/>4th
+              </label>
+              <label>
+                <input type="radio" name="Grade" value="1st-grade"/>5th
+              </label>
+            </div>
+            
+            <label class="div-2-6 border-left form-title">Parent/Guardian<input type="text" name="Parent"/></label>
+
+            <div class="form-line border-top"></div>
+
+            <label class="div-2-6 form-title">Phone
+              <input type="text" name="Phone" />
+            </label>
+
+            <label class="div-2-6 form-title border-left">Email
+              <input type="text" name="Email" />
+            </label>
+
+            <div class="form-line border-top"></div>
+
+            <div class="div-2-6 radio flex form-col">
+              <span class="form-title">First Closest School</span>
+              <label>
+                <input type="radio" name="First School" value="AJ Katzenmaier"/>AJ Katzenmaier
+              </label>
+              <label>
+                <input type="radio" name="First School" value="Greenbay"/>Greenbay
+              </label>
+              <label>
+                <input type="radio" name="First School" value="Howard A Yeager"/>Howard A Yeager
+              </label>
+              <label>
+                <input type="radio" name="First School" value="Marjorie P Hart"/>Marjorie P Hart
+              </label>
+              <label>
+                <input type="radio" name="First School" value="North Elementary"/>North Elementary
+              </label>
+              <label>
+                <input type="radio" name="First School" value="South Elementary"/>South Elementary
+              </label>
+            </div>
+
+            <div  class="div-2-6 radio border-left flex form-col">
+              <span class="form-title">Second Closest School</span>
+              <label>
+                <input type="radio" name="Second School" value="AJ Katzenmaier"/>AJ Katzenmaier
+              </label>
+              <label>
+                <input type="radio" name="Second School" value="Greenbay"/>Greenbay
+              </label>
+              <label>
+                <input type="radio" name="Second School" value="Howard A Yeager"/>Howard A Yeager
+              </label>
+              <label>
+                <input type="radio" name="Second School" value="Marjorie P Hart"/>Marjorie P Hart
+              </label>
+              <label>
+                <input type="radio" name="Second School" value="North Elementary"/>North Elementary
+              </label>
+              <label>
+                <input type="radio" name="Second School" value="South Elementary"/>South Elementary
+              </label>
+            </div>
+
+            <div class="form-line border-top"></div>
+
+            <div class="div-2-6 radio flex form-col">
+              <span class="form-title">What position(s) do you usually play?</span>
+              <label>
+                <input type="checkbox" value="forward" name="Usual Position"/>Forward
+              </label>
+              <label>
+                <input type="checkbox" value="midfield" name="Usual Position"/>Midfield
+              </label>
+              <label>
+                <input type="checkbox" value="defense" name="Usual Position"/>Defense
+              </label>
+              <label>
+                <input type="checkbox" value="goalkeeper" name="Usual Position"/>Goalkeeper
+              </label>              
+            </div>
+
+            <div class="div-2-6 radio flex form-col border-left">
+              <span class="form-title">What position(s) do you want to play?</span>
+              <label>
+                <input type="checkbox" value="forward" name="Wanted Position"/>Forward
+              </label>
+              <label>
+                <input type="checkbox" value="midfield" name="Wanted Position"/>Midfield
+              </label>
+              <label>
+                <input type="checkbox" value="defense" name="Wanted Position"/>Defense
+              </label>
+              <label>
+                <input type="checkbox" value="goalkeeper" name="Wanted Position"/>Goalkeeper
+              </label>             
+            </div>
+
+            <div class="form-line border-top"></div>
+
+            <div class="div-4-6 radio flex">
+              <span class="form-title">Do you already have an uniform?</span>
+              <label>
+                <input type="radio" name="Uniform" value="no" checked/>No
+              </label>
+              <label>
+                <input type="radio" name="Uniform" value="yes"/>Yes
+              </label>
+            </div>
+
+            <div class="form-line border-top"></div>
+
+            <div class="div-2-6 form-title">
+              <span>Jersey size</span>
+              <select name="Jersey-size">
+                <option value="Youth Small">Youth Small</option> 
+                <option value="Youth Medium">Youth Medium</option>
+                <option value="Youth Large">Youth Large</option> 
+                <option value="Small">Small</option> 
+                <option value="Medium">Medium</option> 
+                <option value="Large">Large</option>    
+              </select>       
+            </div>
+
+            <div class="div-2-6 flex border-left form-title">
+              <span>Shorts size</span>
+              <select name="Shorts-size">
+                <option value="Youth Small">Youth Small</option> 
+                <option value="Youth Medium">Youth Medium</option>
+                <option value="Youth Large">Youth Large</option> 
+                <option value="Small">Small</option> 
+                <option value="Medium">Medium</option> 
+                <option value="Large">Large</option>    
+              </select>       
+            </div>
+
+            <div class="form-line div-4-6 border-top"></div>
+
+            <div class="div-4-6 permission">
+              <label class="form-title public-sans-m flex permission-2">Permission to Play
+                <input type="checkbox" name="Permission-to-play" required>
+              </label>
+              <p class="public-sans-s">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+              Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+              accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+              employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+              on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+              sponsored activities, which transportation.
+              By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+              cancellation policy and agree to its terms.</p>
+            </div>
+
+            <div class="form-line border-top"></div>
+
+            <label class="div-2-6 form-title">Name
+              <input type="text" name="Name-of-signature" required/>
+            </label>
+
+            <label class="div-2-6 form-title border-left">Date
+              <input type="text" name="Date-of-signature" required/>
+            </label>
+
+            <div class="form-line border-top"></div>
+
+            <div class="div-4-6 flex div-centred form-button-padding">
+            <input class="public-sans-m form-button" type="submit" name="Submit" value="Submit" />
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <!--Spacer-->
+      <div class="spacer-m"></div>
+
+    </main>
+
+    <footer>
+
+      <!--Footer-->
+      <footer class="nysl-footer">
+        <p class="bebas-s white centred footer-padding">© All rights reserved NYSL 2020</p>
+      </footer> 
+
+      <!--Navbar color scroll-->
+      <script>
+        $(function () {
+            $(document).scroll(function () {
+              var $nav = $(".navbar");
+              $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+              var $nav = $(".nav-section");
+              $nav.toggleClass('white', $(this).scrollTop() > $nav.height());
+              var $nav = $(".nav-active");
+              $nav.toggleClass('nav-active-white', $(this).scrollTop() > $nav.height());
+              var $nav = $(".nysl-nav");
+              $nav.toggleClass('white', $(this).scrollTop() > $nav.height());
+            });
+          });
+      </script>
+
+    </footer>
+
+  </body>
+</html>

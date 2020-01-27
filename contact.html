@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Default things-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!--Title-->
+    <title>NYSL – Contact</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar flex">
+            <div class="nav-section-container nav-section-container-logo div-2-6">
+                <a class="nysl-nav" href="./index.html">NYSL</a>
+            </div>
+            <div class="nav-section-container flex sections div-4-6">
+                <a class="nav-section" href="./index.html">Home</a>
+                <a class="nav-section" href="./about.html">About</a>
+                <a class="nav-section" href="./game-info.html">Game info</a>
+                <a class="nav-section" href="./rules.html">Rules</a>
+                <a class="nav-section" href="./registration-form.html">Registration</a>
+                <a class="nav-section nav-active" href="./contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <!--Banner foto-->
+        <div class="main-banner main-banner-about">
+        </div>
+
+        <!--Spacer-->
+        <div class="spacer-m"></div>
+
+        <!--Title page-->
+        <div class="flex border-top div-centred border-bottom">
+            <div class="div-3-6 centred div-padding border-right border-left">
+                <h1 class="bebas-l">Contact</h1>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!--Spacer-->
+        <div class="spacer-m"></div>
+
+        <div class="flex div-centred border-top border-bottom">
+            <div class="div-3-6 centred div-padding border-right border-left">
+                <p class="public-sans-m margin-bottom-20">Please email us at</p>
+                <a class="mailto-class bebas-s" href="mailto:nysl@chisoccer.org">nysl@chisoccer.org</a>
+                <p class="public-sans-m margin-top-20">We will reply to your email as soon as we can.</p>
+            </div>
+        </div>
+
+        <!--Spacer-->
+        <div class="spacer-m"></div>
+
+    </main>
+
+    <footer>
+        
+        <!--Footer-->
+        <footer class="nysl-footer">
+            <p class="bebas-s white centred footer-padding">© All rights reserved NYSL 2020</p>
+        </footer>        
+
+        <!--Navbar color scroll-->
+        <script>
+            $(function () {
+                $(document).scroll(function () {
+                var $nav = $(".navbar");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                var $nav = $(".nav-section");
+                $nav.toggleClass('white', $(this).scrollTop() > $nav.height());
+                var $nav = $(".nav-active");
+                $nav.toggleClass('nav-active-white', $(this).scrollTop() > $nav.height());
+                var $nav = $(".nysl-nav");
+                $nav.toggleClass('white', $(this).scrollTop() > $nav.height());
+                });
+            });
+        </script>
+    
+    </footer>
+    
+</body>
+
+</html>
